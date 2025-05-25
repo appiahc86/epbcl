@@ -100,7 +100,7 @@ onMounted(() => {
                               I recently used their services where they helped facilitate the Covid 19
                               grant for me and was blown away by
                               the level of professionalism and expertise that this
-                              team provided. From start to finish, everything wasDirector, Coco Benz Ltd
+                              team provided. From start to finish, everything was
                               seamless and I felt like I was in good hands. Not only
                               did they exceed my expectations in terms of quality,
                               but they also went above and beyond to ensure that I
@@ -121,13 +121,13 @@ onMounted(() => {
 
                 <!-- Controls -->
 
-                <a class="carousel-control-prev" href="#carouselDarkVariant" role="button" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
+<!--                <a class="carousel-control-prev" href="#carouselDarkVariant" role="button" data-bs-slide="prev">-->
+<!--                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--                </a>-->
 
-                <a class="carousel-control-next" href="#carouselDarkVariant" role="button" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
+<!--                <a class="carousel-control-next" href="#carouselDarkVariant" role="button" data-bs-slide="next">-->
+<!--                  <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--                </a>-->
 
 
               </div>

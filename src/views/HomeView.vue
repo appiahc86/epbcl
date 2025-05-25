@@ -1,5 +1,5 @@
 <script setup>
-import {onMounted, reactive, ref} from "vue";
+import {onMounted, ref} from "vue";
 import {useRouter} from "vue-router";
 import ServicesComponent from "@/components/ServicesComponent.vue";
 import TestimonialComponent from "@/components/TestimonialComponent.vue";
@@ -8,6 +8,7 @@ const router = useRouter();
 
 const count1 = ref(2);
 const count2 = ref(1);
+const count3 = ref(1);
 
 
 onMounted(() => {
@@ -37,6 +38,7 @@ onMounted(() => {
 
   const counter1 = document.querySelector('#counter1');
   const counter2 = document.querySelector('#counter2');
+  const counter3 = document.querySelector('#counter3');
 
   // For Counter 1
   window.addEventListener('scroll', () => {
@@ -61,7 +63,7 @@ onMounted(() => {
     if (containerRect.top < window.innerHeight) {
 
       const intervalId = setInterval(() => {
-        if (count2.value < 500) {
+        if (count2.value < 800) {
           count2.value += 1;
         } else {
           clearInterval(intervalId);
@@ -69,6 +71,23 @@ onMounted(() => {
       }, 50);
 
     }
+  });
+
+  //   For counter 3
+    window.addEventListener('scroll', () => {
+      const containerRect = counter3.getBoundingClientRect();
+
+      if (containerRect.top < window.innerHeight) {
+
+        const intervalId = setInterval(() => {
+          if (count3.value < 15) {
+            count3.value += 1;
+          } else {
+            clearInterval(intervalId);
+          }
+        }, 500);
+
+      }
   });
 
 
@@ -91,10 +110,7 @@ onMounted(() => {
               <h2 class="animate__animated animate__fadeInLeft animate__slow display-1">
                 Innovating Solutions for a Sustainable Future.
               </h2>
-<!--              <p class="animate__animated animate__fadeInUp">-->
-<!--                We believe in the power of collaboration, working closely with-->
-<!--                farmers and businesses to create mutually beneficial, thriving partnerships.-->
-<!--              </p>-->
+
               <p><button class="btn btn-lg gradient-color display-3 animate__animated animate__fadeInLeft fw-bold"
                          @click="router.push({name: 'contact'})" style="cursor: pointer; color: black"
               >Get In Touch</button>
@@ -118,13 +134,13 @@ onMounted(() => {
             </div>
           </div><!-- End Carousel Item -->
 
-          <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-          </a>
+<!--          <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">-->
+<!--            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>-->
+<!--          </a>-->
 
-          <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-          </a>
+<!--          <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">-->
+<!--            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>-->
+<!--          </a>-->
 
 <!--          <ol class="carousel-indicators"></ol>-->
 
@@ -182,7 +198,7 @@ onMounted(() => {
           <div class="features-counter mt-30 text-center text-sm-left">
             <img src="/img/icons/crowd-35.png" alt="">
             <span class=""> Small Holder Farmers</span>
-            <h3 class="fw-bold counter" id="counter1">{{ count1 ? count1.toLocaleString() : 0  }}</h3>
+            <h3 class="fw-bold counter" id="counter1">{{ count1 ? count1.toLocaleString() : 0  }}+</h3>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-6">
@@ -197,6 +213,13 @@ onMounted(() => {
             <img src="/img/icons/flow-chart-35.png" alt="">
             <span> Value Chain</span>
             <h3 class="fw-bold counter">5</h3>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6">
+          <div class="features-counter item-3 mt-30 text-center text-sm-left">
+            <img src="/img/icons/grp.png" alt="">
+            <span> Associations</span>
+            <h3 class="fw-bold counter" id="counter3">{{ count3 ? count3.toLocaleString() : 0  }}</h3>
           </div>
         </div>
 

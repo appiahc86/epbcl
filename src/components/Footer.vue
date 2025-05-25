@@ -40,12 +40,12 @@ import { RouterLink } from "vue-router"
           <div class="col-lg-4 col-md-3 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><a>Climate-Friendly Initiatives</a></li>
-              <li><a>Agricultural Management Solutions</a></li>
-              <li><a>Empowering Women and Youth</a></li>
-              <li><a>Market Linkages</a></li>
-              <li><a>Business Development and Training</a></li>
-              <li><a>Access to Finance</a></li>
+              <li><router-link :to="{name: 'climate-friendly-initiatives'}">Climate-Friendly Initiatives</router-link></li>
+              <li><router-link :to="{name: 'agricultural-management-solutions'}">Agricultural Management Solutions</router-link></li>
+              <li><router-link :to="{name: 'empowering-women-and-youth'}">Empowering Women and Youth</router-link></li>
+              <li><router-link :to="{name: 'market-linkages'}">Market Linkages</router-link></li>
+              <li><router-link :to="{name: 'business-development-and-training'}">Business Development and Training</router-link></li>
+              <li><router-link :to="{name: 'access-to-finance'}">Access to Finance</router-link></li>
             </ul>
           </div>
 

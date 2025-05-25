@@ -8,7 +8,7 @@ const router = useRouter();
   <!-- About 3 Section -->
   <section id="about-3" class="about-3 section">
 
-    <div class="container section-title" data-aos="fade-up">
+    <div class="container" data-aos="fade-up">
       <h2>Who We Are</h2>
     </div><!-- End Section Title -->
 
