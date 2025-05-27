@@ -79,12 +79,12 @@ const sendMail = async () => {
     <section id="contact" class="contact section">
 
       <div class="mb-5">
-<!--        <iframe-->
-<!--            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15851.28711330292!2d-1.678498599999974!3d6.6689940000000085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb9929c3ff8ff3%3A0x402bc5cef9fefe8d!2sGreenField%20Agricultural%20Services!5e0!3m2!1sen!2sgh!4v1681221153494!5m2!1sen!2sgh"-->
-<!--            width="100%" height="450"  style="width: 100%; height: 400px; border: 0"-->
-<!--            allowfullscreen loading="lazy"-->
-<!--            referrerpolicy="no-referrer-when-downgrade"></iframe>-->
 
+<!-- Google Maps   -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7060778895507!2d-0.5573798251585222!3d6.170096893817231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf2756586adc49%3A0xbc3e476786b5b82f!2sEastern%20Prime%20Business%20Consult%20Limited!5e0!3m2!1sen!2sgh!4v1748325055602!5m2!1sen!2sgh"
+                width="100%" height="450" style="border:0;"
+                allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div><!-- End Google Maps -->
 
       <div class="">
@@ -102,7 +102,7 @@ const sendMail = async () => {
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h4>Location:</h4>
-                  <p>Osabene Opoku Nsiah Junction, <b>Koforidua</b></p>
+                  <p>Old estate ssnit traffic light, <b>Koforidua</b> and <b>Kibi</b></p>
                 </div>
               </div><!-- End Info Item -->
 

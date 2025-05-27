@@ -15,7 +15,9 @@ import { RouterLink } from "vue-router"
               <img class="sitename" src="/img/footerlogo.png">
             </a>
             <div class="footer-contact pt-3">
-              <p> <strong><span class="bi bi-pin-map-fill"></span> </strong> Osabene Opoku Nsiah Junction, Koforidua</p>
+              <p> <strong><span class="bi bi-pin-map-fill"></span> </strong>
+                Old estate ssnit traffic light, <b>Koforidua</b> and <b>Kibi</b>
+              </p>
               <p class="mt-3">
                 <a href="tel:+233201975774" style="color: white;">
                   <strong><span class="bi bi-telephone"></span></strong> <span style="text-decoration: none !important;">+233 20 197 5774</span>
