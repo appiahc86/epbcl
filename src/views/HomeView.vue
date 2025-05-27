@@ -179,7 +179,7 @@ onMounted(() => {
               </div>
             </div>
             <div class="col-lg-6 spacing-md mb-2">
-              <img src="/img/home/wwa.jpg" alt="Who we are" class="img-fluid" data-aos="fade-up" data-aos-delay="100">
+              <img src="/img/home/wa.jpg" alt="Who we are" class="img-fluid" data-aos="fade-up" data-aos-delay="100">
             </div>
 
           </div>

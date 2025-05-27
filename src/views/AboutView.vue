@@ -4,7 +4,6 @@ import { useRouter } from "vue-router";
 
 const router = useRouter();
 
-import ServicesComponent from "@/components/ServicesComponent.vue";
 import AboutComponent from "@/components/AboutComponent.vue";
 import TeamComponent from "@/components/TeamComponent.vue";
 </script>

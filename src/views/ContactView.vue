@@ -1,5 +1,62 @@
 <script setup>
 import { RouterLink } from "vue-router";
+import {ref} from "vue";
+import emailjs from '@emailjs/browser';
+import { toast } from 'vue3-toastify';
+import 'vue3-toastify/dist/index.css';
+
+const myForm = ref();
+const email = ref('');
+const name = ref('');
+const message = ref('');
+const subject = ref('');
+const sendingMail = ref(false);
+
+
+const sendMail = async () => {
+  try {
+
+
+
+    if (!email.value.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)){
+      return toast.error("Please Enter a valid email address", {
+        autoClose: 5000,
+      });
+    }
+
+    if (name.value.trim().length < 2) {
+      return toast.error("Please Enter your name", {
+        autoClose: 5000,
+      });
+    }
+
+
+
+    sendingMail.value = true;
+
+    const result = await emailjs.sendForm(
+        'service_r0bz8db',
+
+        'epbcl_contact_form',
+        myForm.value,
+        'uuM6pUHNvPCTHNgZa');
+
+    myForm.value.reset();
+    email.value = "";
+    name.value = "";
+    subject.value = "";
+    message.value = "";
+    return toast.success("Email Was Sent Successfully", {
+      autoClose: 5000,
+    });
+  }catch (e){
+    return toast.error("Error Occurred. Please try again later", {
+      autoClose: 5000,
+    });
+  }finally { sendingMail.value = false; }
+
+}
+
 </script>
 
 <template>
@@ -30,7 +87,7 @@ import { RouterLink } from "vue-router";
 
       </div><!-- End Google Maps -->
 
-      <div class="gradient-colo">
+      <div class="">
       <div class="container" data-aos="fade">
 
         <div class="row gy-5 gx-lg-5 py-4">
@@ -70,28 +127,36 @@ import { RouterLink } from "vue-router";
           </div>
 
           <div class="col-lg-8">
-            <form role="form" class="php-email-form">
+            <form role="form" class="php-email-form"
+                  id="contact-form"
+                  ref="myForm"
+                  @submit.prevent="sendMail"
+            >
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  <input type="text" name="name" class="form-control" v-model.trim="name"
+                         id="form_name" placeholder="Your Name" minlength="3" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="email" v-model.trim="email"
+                         id="form_email" placeholder="Your Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control" v-model.trim="subject"
+                       name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" placeholder="message" required></textarea>
+                <textarea class="form-control" name="message"
+                          v-model.trim="message" minlength="10"
+                          placeholder="message" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
+
               <div class="text-center">
-                <button type="submit" style="background: #5a9c0e;">Send Message</button>
+                <button type="submit" style="background: #5a9c0e;" :disabled="sendingMail">
+                  Send Message
+                  <span class="spinner-border spinner-border-sm" v-if="sendingMail"></span>
+                </button>
               </div>
             </form>
           </div><!-- End Contact Form -->

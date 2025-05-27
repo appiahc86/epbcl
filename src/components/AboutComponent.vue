@@ -8,21 +8,20 @@ const router = useRouter();
   <!-- About 3 Section -->
   <section id="about-3" class="about-3 section">
 
-    <div class="container" data-aos="fade-up">
-      <h2>Who We Are</h2>
-    </div><!-- End Section Title -->
-
     <div class="container">
       <div class="row gy-4 justify-content-between align-items-center">
         <div class="col-lg-6 order-lg-2 position-relative" data-aos="zoom-out">
-          <img src="/img/about.jpg" alt="Image" class="img-fluid rounded-circle">
+          <img src="/img/about1.jpg" alt="Image" class="img-fluid">
           <!--              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn">-->
           <!--                <span class="play"><i class="bi bi-play-fill"></i></span>-->
           <!--              </a>-->
         </div>
         <div class="col-lg-5 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+
+          <h3>Who We Are</h3>
+
           <p class="mb-4">
-            <b>Eastern Prime Business Consult Limited</b> is dedicated
+            <b style="font-size: 1.2em;">Eastern Prime Business Consult Limited</b> is dedicated
             to driving growth, efficiency, and sustainability in the
             agricultural sector through tailored consulting services
             and innovative solutions. We provide strategic support
