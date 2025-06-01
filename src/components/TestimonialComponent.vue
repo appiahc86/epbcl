@@ -103,7 +103,7 @@ onMounted(() => {
                               They exhibited excellent  professionalism and intelligence
                               with top-notch customer service. I  recommend them to both start-ups
                               and existing SMEs for tailor-made solutions for business growth and
-                              sustainability. <br><br><br><br><br>
+                              sustainability. <br><br><br><br>
                             </p>
                           </div>
                         </div>
