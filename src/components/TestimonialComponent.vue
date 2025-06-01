@@ -89,24 +89,21 @@ onMounted(() => {
                       <div class="col-lg-10 col-xl-8">
                         <div class="row">
                           <div class="col-lg-4 d-flex justify-content-center">
-                            <img src="/img/testimonials/cocobenz.jpg"
+                            <img src="/img/testimonials/greeenfield_ceo.jpeg"
                                  class="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" width="150"
                                  height="150" />
                           </div>
                           <div
                               class="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
-                            <h4 class="mb-4"><b>Bender Owusu Antwi Bediako</b> - Director, Coco Benz Ltd</h4>
+                            <h4 class="mb-4">
+                              <b>Dr. Samuel Amissah</b> - Found & CEO, Greenfield Agricultural Services Ltd
+                            </h4>
                             <p class="mb-0 pb-3">
-                              I recently used their services where they helped facilitate the Covid 19
-                              grant for me and was blown away by
-                              the level of professionalism and expertise that this
-                              team provided. From start to finish, everything was
-                              seamless and I felt like I was in good hands. Not only
-                              did they exceed my expectations in terms of quality,
-                              but they also went above and beyond to ensure that I
-                              was satisfied with the end result. I would highly recommend
-                              their services to anyone in need and will definitely be
-                              using them again in the future!
+                              Working with Eastern Prime Business Consult was a mind-blowing experience.
+                              They exhibited excellent  professionalism and intelligence
+                              with top-notch customer service. I  recommend them to both start-ups
+                              and existing SMEs for tailor-made solutions for business growth and
+                              sustainability. <br><br><br><br><br>
                             </p>
                           </div>
                         </div>
